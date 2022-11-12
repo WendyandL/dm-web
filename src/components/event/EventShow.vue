@@ -9,6 +9,7 @@
         <el-breadcrumb-item>突发事件管理</el-breadcrumb-item>
       </el-breadcrumb>
     </el-row>
+    <event-add @onSubmit="loadInfo()"></event-add>
     <el-card>
       <el-form>
         <el-row>
@@ -60,9 +61,10 @@
 </template>
 
 <script>
-
+import EventAdd from './EventAdd'
 export default {
   name: 'EventShow',
+  components: {EventAdd},
   data () {
     return {
       events: [],

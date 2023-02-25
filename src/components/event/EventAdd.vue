@@ -1,9 +1,9 @@
 <template>
   <div style="text-align: left">
-    <el-button type="primary" icon="el-icon-user" style="margin: 18px 0 20px 18px" @click="dialogFormVisible=true">
-      添加事件
+    <el-button type="primary" icon="el-icon-phone-outline" style="margin: 18px 0 20px 18px" @click="dialogFormVisible=true">
+      录入事件
     </el-button>
-    <el-dialog title="添加突发事件" :visible.sync="dialogFormVisible" @close="clear" width="25%">
+    <el-dialog title="录入突发事件" :visible.sync="dialogFormVisible" @close="clear" width="25%">
       <el-form :model="loginForm" :rules="rules" label-position="left" label-width="0px">
         <el-form-item>
           <el-input type="text" v-model="loginForm.eventName" auto-complete="off" placeholder="事件名称"></el-input>
